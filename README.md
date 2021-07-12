@@ -23,8 +23,8 @@ Die Exploration wurde in vier Notebooks aufgeteilt, da sich so die Laufzeit eine
 Anschließend wird das Modell (die Regression) durch sklearn trainiert. Dieses Modell kann dann zur Vorhersage genutzt werden.
 
 ## Anwendung
-Zur Anwendung des betriebswirtschaftlichen Zusammenhangs kann einfach das Notebook 5_Modell_aufsetzen.ipynb ausgeführt und eine neue Zelle erstellt werden. Dafür müssen zuerst alle libraries aus der requirements.txt Datei installiert sein. Der Befehl reg.predict() bekommt als Parameter alle relevanten Attribute übergeben, die für die Vorhersage benötigt werden. Alle Attribute werden numerisch übergeben. Beispiele, wie die kategorischen Attribute numerisch gemacht werden, finden sich auch in diesem Notebook. 
+Zur Anwendung des betriebswirtschaftlichen Zusammenhangs kann einfach das Notebook 5_Modell_aufsetzen.ipynb ausgeführt und eine neue Zelle erstellt werden. Dafür müssen zuerst alle libraries aus der requirements.txt Datei installiert sein. Außerdem muss der Ordner data in src neben den .ipynb Dateien liegen, damit diese die csv-Datei finden. Dann kann im Notebook der Befehl reg.predict() eingegeben werden, der als Parameter alle relevanten Attribute übergeben bekommt, die für die Vorhersage benötigt werden. Alle Attribute werden numerisch übergeben. Beispiele, wie die kategorischen Attribute numerisch gemacht werden, finden sich auch in diesem Notebook. 
 Damit kann dann die Funktion umgesetzt werden, dass nur ein bestimmtes Parameter verändert wird, um zu überprüfen, welche Auswirkung dieses Parameter auf den Profit hat.
 
 
-Eine detailliertere Dokumentation ist im Dokument report.md zu finden.
+Eine detailliertere Dokumentation ist im Dokument report.md (bzw. project_report_Die_Elite.pdf) zu finden.

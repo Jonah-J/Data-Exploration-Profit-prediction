@@ -52,6 +52,6 @@ Nach dem alle Attribute, die bei der vorangegangenen Exploration wegen fehlender
 # Kritische Reflexion
 
 # Quellen
-[^Quelle1]: https://www.controllingportal.de/Fachinfo/Excel-Tipps/Umsatzprognosen-ganz-einfach-erstellen-Nutzen-Sie-die-SCHAeTZER-Funktion.html 
-[^Quelle2]: https://support.microsoft.com/de-de/office/erstellen-einer-prognose-in-excel-f%C3%BCr-windows-22c500da-6da7-45e5-bfdc-60a7062329fd 
+[Quelle1]: https://www.controllingportal.de/Fachinfo/Excel-Tipps/Umsatzprognosen-ganz-einfach-erstellen-Nutzen-Sie-die-SCHAeTZER-Funktion.html 
+[Quelle2]: https://support.microsoft.com/de-de/office/erstellen-einer-prognose-in-excel-f%C3%BCr-windows-22c500da-6da7-45e5-bfdc-60a7062329fd 
 

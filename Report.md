@@ -8,7 +8,7 @@ Das Ziel ist es, den betriebswirtschaftlichen Zusammenhang umzusetzen. Dieser be
 ## Related Work
 Zum direkten Thema der Profitvorhersage bestehen keine direkten wissenschaftlichen Publikationen. Was dies jedoch am nächsten kommt, ist die Umsetzung von Microsoft in deren Tabellenkalkulations-Programm „Excel“.
 
-Hier gibt es als einfache Version die „Schätzer-Funktion“. In dieser ist die Syntax:  =SCHÄTZER(x,Y_Werte,X_werte). Dabei markiert X die Zelle an der der Wert vorhergesagt werden soll. Die Y-Werte währen hier beispielsweise der Profitverlauf im gleichen Jahr wie X und die X-Werte im vorherigen Jahr. [^Quelle1] 
+Hier gibt es als einfache Version die „Schätzer-Funktion“. In dieser ist die Syntax:  =SCHÄTZER(x,Y_Werte,X_werte). Dabei markiert X die Zelle an der der Wert vorhergesagt werden soll. Die Y-Werte währen hier beispielsweise der Profitverlauf im gleichen Jahr wie X und die X-Werte im vorherigen Jahr (vgl. [Quelle1](https://www.controllingportal.de/Fachinfo/Excel-Tipps/Umsatzprognosen-ganz-einfach-erstellen-Nutzen-Sie-die-SCHAeTZER-Funktion.html)). 
 Die nächste Version ist das Prognoseblatt in Excel, welches anhand eines Anfangs- sowie Enddatums und dem Profitverlauf in dieser Zeit eine graphisch dargestellte Prognose generiert. Hier können genauere Zeitintervalle in der die Prognose dargestellt werden soll eingestellt werden. [^Quelle2]
 
 Durch diese bereits verwirklichten Ansätze von Microsoft lässt sich erkennen, dass eine Prognose des Profits ein behandeltes Thema ist, welches bereits große Konzerne beschäftigt. 
@@ -52,6 +52,6 @@ Nach dem alle Attribute, die bei der vorangegangenen Exploration wegen fehlender
 # Kritische Reflexion
 
 # Quellen
-[^Quelle1]: https://www.controllingportal.de/Fachinfo/Excel-Tipps/Umsatzprognosen-ganz-einfach-erstellen-Nutzen-Sie-die-SCHAeTZER-Funktion.html .
-[^Quelle2]: https://support.microsoft.com/de-de/office/erstellen-einer-prognose-in-excel-f%C3%BCr-windows-22c500da-6da7-45e5-bfdc-60a7062329fd .
+[^Quelle1]: https://www.controllingportal.de/Fachinfo/Excel-Tipps/Umsatzprognosen-ganz-einfach-erstellen-Nutzen-Sie-die-SCHAeTZER-Funktion.html 
+[^Quelle2]: https://support.microsoft.com/de-de/office/erstellen-einer-prognose-in-excel-f%C3%BCr-windows-22c500da-6da7-45e5-bfdc-60a7062329fd 
 

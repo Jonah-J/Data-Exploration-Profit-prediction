@@ -1,1 +1,8 @@
-
+pandas
+numpy
+plotly.express
+scipy.stats
+sklearn.model_selection
+sklearn.linear_model
+matplotlib.pyplot
+dython

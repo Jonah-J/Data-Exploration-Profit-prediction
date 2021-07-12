@@ -43,4 +43,7 @@ Wenn das jeweilige Attribut diese drei Schritte der Datenexploration (Prüfung a
 # Der betriebswirtschaftliche Bezug/Ergebnisse
 
 
+# Kritische Reflexion
+
+
 

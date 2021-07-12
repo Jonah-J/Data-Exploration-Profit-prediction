@@ -1,9 +1,9 @@
 # Report der "Die Elite"-Gruppe
 
 # Einführung und Motivation
-Die Gruppe "Die Elite" besteht aus den Studenten Jonah Jäger, Marius Kiskemper und Marvin Vielmeyer. Das Projekt "Data-Exploration-Profit-Prediction" besitzt das Ziel, basierend auf einem Input-Vektor, der aus verschiedenen Parameter besteht, den Profit einer Transaktion vorherzusagen. Um dies zu erreichen wird ein Modell aufgesetzt, auf dem verschieden Daten trainiert werden. 
+Die Gruppe "Die Elite" besteht aus den Studenten Jonah Jäger, Marius Kiskemper und Marvin Vielmeyer. Das Projekt "Data-Exploration-Profit-Prediction" besitzt das Ziel, basierend auf einem Input-Vektor, der aus verschiedenen Parametern besteht, den Profit einer Transaktion vorherzusagen. Um dies zu erreichen wird ein Modell aufgesetzt, auf dem der ausgewählte Datensatz trainiert wird. 
 
-Die Motivation hierbei besteht darin, den betriebswirtschaftlichen Zusammenhang für Unternehmen herauszustellen, die erkennen wollen, welche Parameter des jeweiligen Produktes den größten Einfluss auf ihren Profit haben. 
+Die Motivation ist es, den betriebswirtschaftlichen Zusammenhang umzusetzen. Dieser besteht darin, dass Unternehmen unsere Software zur Profit-Vorhersage nutzen können, um herauszufinden, welche Parameter des Datensatzes eine Auswirkung auf den Profit haben.
 
 ## Datensatz
 Der Datensatz ist von Kaggle und kann [hier](https://www.kaggle.com/apoorvaappz/global-super-store-dataset "hier") gefunden werden. Hier sind Daten von Nutzer Transaktionen auf E-Commerce Seiten gespeichert, die im Zeitraum des 1.Januar.2011 und dem 31.Dezember.2014 stattgefunden haben. Im Genaueren sind hier Informationen zu den Attributen "Row-ID", "Order-ID, "Order-Date", "Ship-Date", "Ship Mode", "Customer ID", "Costumer Name", "Segment", "City", "State", "Product ID",	"Category",	
@@ -11,4 +11,14 @@ Der Datensatz ist von Kaggle und kann [hier](https://www.kaggle.com/apoorvaappz/
 
 Ebenfalls sind die Daten für unseren Sachzusammenhang gelabeled, da jede Zeile einen Wert für den Profit der Transaktion beinhaltet. 
 
-## Wissenchaftlche Vorgehensweise 
+## Wissenschaftlche Vorgehensweise 
+Die wissenschaftliche Vorgehensweise unserer Datenxploration sollte möglichst repräsentativ, vergleichbar, messbar und wiederholbar sein. Daher haben wir uns einen besonderen Ansatz für die Exploration überlegt. Das Ziel ist es ja, einen Algorithmus zu trainieren, der den Profit vorhersagt. Diese Vorhersage sollte anhand verschiedener Parameter passieren, die den Profit-Wert beeinflussen. Um dies zu ermöglichen, müssen zuerst alle Attribute herausgestellt werden, die eine Korrelation mit dem Profit haben (deren Veränderung den Profit also auch verändert). 
+Wir haben folgende repräsentative Methodik angewendet, um diese Attribute zu finden: Alle Attribute werden auf genau die gleichen Kriterien getestet. Also egal, wie offensichtlich eine vermeintliche Korrelation mit dem Profit ist, werden trotzdem die gleichen Schritte wie bei allen anderen Attributen durchgeführt. Dies erzeugt eine sehr gute Vergleichbarkeit und Nachvollziehbarkeit der Ergebnisse.
+Die Tests dieser Kriterien waren einerseits die Prüfung der grafischen Korrelation mittels Diagrammen, sowie andererseits die rechnerische Korrelation mittels statistischer Methoden. Zur genauen Umsetzung dieser Testmethoden jedoch später mehr.
+Der gesamte Quellcode unseres Projekts ist auf diese Vorgehensweise ausgelegt. Denn jedes der Notebooks der Datenexploration ist jeweils nummiert. Hierbei spiegelt eine Nummer den Test eines Attributs wider. Dieser Test ist bei jedem Attribut gleich aufgebaut und durchgeführt. Außerdem hat auch jedes Attribut ein kleines Fazit im Dokument, welches begründet warum das Attribut entfernt oder beibehalten wird. Die wissenschaftliche Vorgehensweise findet sich also im Quellcode wieder.
+
+# Die Datenexploration
+
+## Grafische Korrelation mit dem Profit
+Wie erläutert, durchläuft jedes Attribut den Prozess der grafischen Analyse der Auswirkung auf den Profit. Hier wird grundlegend zwischen den kategorischen und numerischen Attributen unetrschieden. 
+Kategorische Variablen haben den Vorteil, dass hier die Transaktionen gruppiert werden können (z.B. Gruppierung nach Produkt-Kategorie: entweder Technologie, Möbel ). Es muss jedoch zunächst bei jedem gruppierten Attribut geprüft werden, ob die einzelnen Gruppen genug Transaktionen haben, um valide Vorhersagen treffen zu können. Denn wenn z.B. ein Attribut über 30000 verschiedene Ausprägungen hat, wobei jedes Attribut nur ein- oder maximal zweimal vorkommt, kann den Durchschnittswerten dieser Gruppe keine Aussagekraft zugewiesen werden. Denn die Gefahr wäre dann zu groß, dass diese ein oder zwei Werte für dieses Attribut nur Ausreißerwerte sind. Die optimalen kategorischen Attribute haben also möglichst wenige verschiedene Gruppen, die dafür dann jeweils viele Transaktionen haben. Anschließend an diese Prüfung wird für jede dieser Gruppen ein durchschnittlicher Profit gebildet. Im Idealfall ist der durchschnittliche Profit je nach Gruppe anders. Denn dann kann die Annahme getroffen werden, dass dieses Attribut den Profit beeinflusst. Die Interpreatation der der Diagramme ist jedoch subjektiv, sodass die Annahmen unterschiedlich ausfallen können.Um die Wissenschaftlichketi beizubehalten wird jedes Attribut darüber hinaus noch einem statistischen Test unterzogen.

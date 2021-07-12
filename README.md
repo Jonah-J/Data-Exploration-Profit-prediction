@@ -2,7 +2,9 @@
 
 ## Teammitglieder
 Marius Kiskemper
+
 Marvin Vielmeyer
+
 Jonah Jäger
 
 ## Struktur des Projekts
@@ -23,5 +25,6 @@ Anschließend wird das Modell (die Regression) durch sklearn trainiert. Dieses M
 ## Anwendung
 Zur Anwendung des betriebswirtschaftlichen Zusammenhangs kann einfach am Ende des Notebooks 5_Modell_aufsetzen.ipynb eine neue Zelle erstellt und der Befehl reg.predict() ausgeführt werden. Hier werden als Parameter alle relevanten Attribute übergeben. Alle Attribute werden numerisch übergeben. Beispiele, wie die kategorischen Attribute numerisch gemacht werden, finden sich auch in diesem Notebook. 
 Damit kann dann die Funktion umgesetzt werden, dass nur ein bestimmtes Parameter verändert wird, um zu überprüfen, welche Auswirkung dieses Parameter auf den Profit hat.
+
 
 Eine detailliertere Dokumentation ist im Dokument report.md zu finden.

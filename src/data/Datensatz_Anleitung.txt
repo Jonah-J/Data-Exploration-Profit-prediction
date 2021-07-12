@@ -1,0 +1,1 @@
+Legen Sie diesen data-Ordner (mit der Datei Global_Superstore2.csv) neben die .ipynb Dateien, um alles ohne Fehler auszuführen.
